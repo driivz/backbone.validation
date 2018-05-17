@@ -29,10 +29,14 @@ Backbone.Validation = (function(_){
         formatPatternLabel: function(pattern) {
             switch (pattern) {
                 case "phone":
+                case "extendedPhone":
+                case "extendedZipcode":
+                case "limitedSpecialChars":
                 case "currency":
                 case "creditCard":
                 case "alphaNumeric":
                 case "integerNoHex":
+                case "integerOrHidden":
                 case "integerWithHex":
                 case "decimalNoHex" : return com.driivz.portal.common.Locale.format("label.backbone.patternType.{0}", pattern);
                 default: return pattern;
