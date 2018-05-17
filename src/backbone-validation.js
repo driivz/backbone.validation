@@ -31,6 +31,7 @@ Backbone.Validation = (function(_){
                 case "phone":
                 case "currency":
                 case "creditCard":
+                case "alphaNumeric":
                 case "integerNoHex":
                 case "integerWithHex":
                 case "decimalNoHex" : return com.driivz.portal.common.Locale.format("label.backbone.patternType.{0}", pattern);
